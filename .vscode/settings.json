@@ -1,0 +1,12 @@
+{
+  // "files.autoSave": "never",
+  "editor.fontFamily": "Fira Code iScript, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.multiCursorModifier": "alt",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "emmet.includeLanguages": {
+    "typescript": "html",
+    "javascript": "javascriptreact"
+  }
+}

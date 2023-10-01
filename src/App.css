@@ -1,38 +1,228 @@
-.App {
+* {
   text-align: center;
+  font: 1em sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-fluid {
+  background-color: rgb(35, 35, 34);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  align-items: baseline;
+  background-color: rgb(35, 35, 34);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appIcon {
+  text-align: left;
+}
+
+.header .app-name {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0% 2.5%;
+  flex: 3;
 }
 
-.App-link {
-  color: #61dafb;
+.app-name-header {
+  margin-bottom: 0.1rem !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name h1 {
+  text-align: left;
+}
+
+.name h6 {
+  text-align: left;
+  margin-left: 8rem;
+}
+
+.current-time {
+  text-align: end;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs h3 {
+  margin: 0px 50px;
+}
+
+.tabs button {
+  width: 50%;
+}
+
+.parameters {
+  display: flex;
+  margin: 50px;
+}
+
+.parameters h4 {
+  margin: 50px 0px;
+  display: inline;
+}
+
+.unit {
+  display: flex;
+  margin: 10px;
+}
+
+.unit h4 {
+  margin: 3px 10px;
+}
+
+/* .unit-button {
+  background: linear-gradient(to right, rgb(28, 230, 72), black);
+  margin: 0px 10px;
+  padding: 0px 40px;
+  border-radius: 30px;
+} */
+
+.unit-button button {
+  background-color: black;
+  margin-top: 2px;
+  height: 90%;
+  width: 30px;
+  border-radius: 60px;
+}
+
+.search-input {
+  padding: 10px;
+  display: flex;
+}
+
+.form-control {
+  text-align: start;
+  margin: 0px 25rem;
+}
+
+.location {
+  display: flex;
+  padding: 20px 50px;
+}
+
+.temp {
+  display: flex;
+  margin: 1px 25vw;
+}
+
+.temp p {
+  font-size: 50px;
+}
+
+.card-today {
+  background: linear-gradient(to bottom right, rgb(216, 51, 216), black);
+  height: 45vh;
+  width: 70vw;
+  margin: 2vh 13vw;
+  border-radius: 30px;
+}
+
+.card-tommorow {
+  background: linear-gradient(to bottom right, rgb(69, 223, 195), black);
+  height: 45vh;
+  width: 70vw;
+  margin: 2vh 15vw;
+  border-radius: 30px;
+}
+
+.card-weekly {
+  background: linear-gradient(to bottom right, rgb(180, 221, 45), black);
+  height: 45vh;
+  width: 70vw;
+  margin: 2vh 15vw;
+  border-radius: 30px;
+}
+
+.values {
+  display: flex;
+  margin: 2px;
+  padding: 2px;
+}
+
+.forecast {
+  display: flex;
+  margin: 3vh 8vw;
+}
+
+.card-forecast {
+  background: linear-gradient(to bottom, rgb(216, 51, 216), black);
+  margin: 5px 30px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.value {
+  margin: 100px;
+}
+
+.card {
+  border-radius: 30px;
+  margin: 5px;
+}
+
+/*Checkbox slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(to right, rgb(28, 230, 72), black);
+}
+
+input:focus + .slider {
+  background: linear-gradient(to right, rgb(28, 230, 72), black);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  background: black;
+}
+
+.active-tab {
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
